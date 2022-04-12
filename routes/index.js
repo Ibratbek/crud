@@ -13,4 +13,11 @@ router
   .route('/doctors/:id')
   .delete((req, res) => DoctorController.remove(req, res));
 
+router
+  .route('/avatar')
+  .post((req, res) => DoctorController.setAvatar(req, res));
+
+router
+  .route('/avatar/:id')
+  .get((req, res) => DoctorController.getAvatar(req, res));
 module.exports = router;

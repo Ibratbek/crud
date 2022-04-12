@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = require('mongoose').Schema;
 
 const DoctorSchema = new Schema({
-  imageUrl: String,
+  image: String,
   fullName: String,
   workExperience: String,
   specialization: String,
